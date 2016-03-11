@@ -1,0 +1,21 @@
+include_recipe 'nagios::centos'
+ /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg'
+
+define contactgroup{
+contactgroup_name          admins
+alias                      Nagios Admin
+
+
+}
+ knife bootstrap 192.168.152.107 -x vagrant -P vagrant --sudo
+
+template '/usr/local/nagios/etc/objects/contacts.cfg' do
+  source 'config.json.erb'
+  end
+owner 'root'
+  group 'root'
+  mode '0755'
+
+service 'httpd' do
+  action [ :enable, :start ]
+end
