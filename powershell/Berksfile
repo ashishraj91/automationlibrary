@@ -1,0 +1,9 @@
+source "https://supermarket.chef.io"
+
+
+
+metadata
+cookbook 'windows', '>= 1.2.8'
+cookbook 'ms_dotnet', '>= 2.6'
+cookbook 'chef_handler'
+
