@@ -1,6 +1,6 @@
 name 'MMZ_slave_cloud'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Sanchit Bansal'
+maintainer_email 'sanchit.bansal@relevancelab.com'
 license 'all_rights'
 description 'Installs/Configures MMZ'
 long_description 'Installs/Configures MMZ'
