@@ -1,0 +1,23 @@
+http://www.sonatype.org/nexus/2015/02/27/setup-local-nexus-repository-and-deploy-war-file-from-maven/   --deploy war to nexus  respoi
+
+
+
+http://stackoverflow.com/questions/8414008/how-to-deploy-my-artifact-on-to-my-nexus    ----deploy war to nexus main
+
+http://2.bp.blogspot.com/-X5ge1paOotQ/VFd_8lDmiHI/AAAAAAAADU4/1F-8CO7fMl4/s1600/Selection_006.png   -comnfiguration file 
+
+http://www.sonatype.org/nexus/2015/01/07/using-maven-to-assemble-and-release-artifacts-to-nexus/ --comnfiguration file
+
+
+https://support.sonatype.com/hc/en-us/articles/213465818-How-can-I-programatically-upload-an-artifact-into-Nexus-   
+
+
+
+https://wiki.jenkins-ci.org/display/JENKINS/Repository+Connector+Plugin
+
+
+
+https://asadbukhariblog.wordpress.com/2015/08/31/sonatype-nexus-oss-installation-on-ubuntu-14-04-lts/  how to install nexus for ubuntu
+
+
+http://www.naturalborncoder.com/methodology/2015/05/27/sonarqube-on-ubuntu-14-04/    -how to inastall sonar qube for ubuntu 14.04 

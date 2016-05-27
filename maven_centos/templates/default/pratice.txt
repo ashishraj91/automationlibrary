@@ -1,0 +1,24 @@
+remote_file '/opt' do
+source 'http://mirror.olnevhost.net/pub/apache/maven/binaries/apache-maven-3.2.1-bin.tar.gz;tar -xzvf apache-maven-3.2.1-bin.tar.gz -C /opt'
+owner 'root'
+group 'root'
+mode  '0777'
+action :create
+end
+
+execute 'move file' do
+cwd '/opt'
+command ' sudo mv apache-maven-3.2.1/ /opt/maven'
+not_if do FileTest.directory?/opt/maven end
+ark "apache-maven" do 
+url 'http://mirror.olnevhost.net/pub/apache/maven/binaries/apache-maven-3.2.1-bin.tar.gz;tar -xzvf apache-maven-3.2.1-bin.tar.gz'
+path '/opt'
+version '3.2.1'
+ action :install
+end
+
+curl -v -u admin:admin123 --upload-file ./AntExample.war http://192.168.101.37:8081/nexus/content/repositories/rl/prod/www.relevancelab.com/1.0/$BUILD_NUMBER/AntExample.war
+
+
+
+http://localhost:8082/nexus/repository/maven-public/
